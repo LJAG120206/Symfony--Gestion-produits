@@ -1,0 +1,73 @@
+1) INSTALLATION DU GESTIONNAIRE DE DÉPENDANCES COMPOSER
+
+SE METTRE À LA RACINE : cd ~ 
+TÉLÉCHARGER L'INSTALLER : php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+INSTALLER COMPOSER : php composer-setup.php
+SUPPRIMER L'INSTALLER : php -r "unlink('composer-setup.php');"
+PASSEZ EN ADMINISTRATEUR : su
+UTILISER LA COMMANDE COMPOSER PARTOUT : sudo mv composer.phar /usr/local/bin/composer
+TESTER (VOUS DEVRIEZ VOIR AFFICHER LE LOGO COMPOSER AVEC SA LISTE DE COMMANDES) : composer
+
+2) INSTALLATION DU CLIENT SYMFONY
+
+TÉLÉCHARGER ET INSTALLER : wget https://get.symfony.com/cli/installer -O - | bash
+UTILISER LA COMMANDE SYMFONY PARTOUT : mv /home/dwwm/.symfony/bin/symfony /usr/local/bin/symfony
+TESTER (VOUS DEVRIEZ VOIR AFFICHER LA LISTE DE COMMANDES) : symfony
+
+3) INSTALLER GIT
+
+INSTALLER GIT : apt-get install git
+VALIDER L'INSTALLATION : o
+CONFIGURER LE NOM : git config --global user.name "Votre nom"
+CONFIGURER LE MAIL : git config --global user.name "Votre mail"
+
+4) CRÉER UN PROJET SYMFONY
+
+SE METTRE DANS LE DOSSIER /WWW : cd /var/www
+INSTALLER UN PROJET SYMFONY(REMPLACER my_project_name PAR LE NOM DE VOTRE PROJET) : symfony new my_project_name 
+RAJOUTER --full POUR UN PROJET AVEC TOUTES LES DEPENDANCES
+INSTALLER LE SERVEUR LOCAL SYMFONY : symfony server:ca:install
+DEMARRER LE SERVEUR SYMFONY : symfony server:start
+DEMARRER LE SERVEUR SYMFONY EN FOND : symfony server:start -d
+Une fois le serveur démarrer, il faudra aller sur l'adresse qu'il va afficher.
+
+5) INSTALLER LES BUNDLES NECESSAIRES SANS LE --full
+MAKERBUNDLE : composer require symfony/maker-bundle
+ANNOTATIONS : composer require doctrine/annotations
+TWIG : composer require symfony/twig-bundle
+DOCTRINE : composer require symfony/orm-pack
+
+ctrl ,
+sugest basic
+format -> Format on save
+emmet -> Add item twig html
+
+
+6) EXTENSIONS VSCODE
+PHP Intelephense : améliore la fonctionalité PHP de VSCode (aucomplétions, importations...)
+PHP Namespace Resolver : importer des classes via un simple click droit
+Twig Language 2 : offre des fonctionnalités et raccourcis dans les fichiers .twig
+
+CREER UN CONTROLEUR AVEC SON TEMPLATE : symfony console make:controller
+CREER UNE ENTITY : symfony console make:entity
+
+
+
+HomeController /home route.yaml
+AboutController /about annotations route
+HomeController /home/deux dans méthode show
+
+7) TWIG
+
+8) DOCTRINE
+CREER BASE DE DONNEES : symfony console doctrine:database:create
+FAIRE UNE MIGRATION : symfony console make:migration
+APPLIQUER LES MIGRATIONS : symfony console doctrine:migrations:migrate
+SUPPRIMER BASE DE DONNEES : symfony console doctrine:database:drop --force
+
+CHARGER FIXTURES : symfony console doctrine:fixtures:load
+
+FIXTURES : composer require --dev orm-fixtures
+FAKER : composer require fakerphp/faker
+composer require mbezhanov/faker-provider-collection
+composer require bluemmb/faker-picsum-photos-provider
