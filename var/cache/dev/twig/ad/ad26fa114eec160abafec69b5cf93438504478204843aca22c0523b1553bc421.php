@@ -82,50 +82,48 @@ class __TwigTemplate_5158b3aca36c3c8e8072b684f75ebc0ee4662774e8fd10b6c06d127bc70
         foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
             // line 12
             echo "                ";
-            if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, $context["product"], "visible", [], "any", false, false, false, 12), true))) {
-                // line 13
-                echo "                    <div class=\"col\">
+            // line 13
+            echo "                    <div class=\"col\">
                     <div class=\"card\">
                         <img src=\"";
-                // line 15
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "mainPicture", [], "any", false, false, false, 15), "html", null, true);
-                echo "\" class=\"card-img-top\" alt=\"...\">
+            // line 15
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "mainPicture", [], "any", false, false, false, 15), "html", null, true);
+            echo "\" class=\"card-img-top\" alt=\"...\">
                         <div class=\"card-body\">
                             <span class=\"badge bg-";
-                // line 17
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["product"], "category", [], "any", false, false, false, 17), "color", [], "any", false, false, false, 17), "html", null, true);
-                echo "\">";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["product"], "category", [], "any", false, false, false, 17), "name", [], "any", false, false, false, 17), "html", null, true);
-                echo "</span>
+            // line 17
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["product"], "category", [], "any", false, false, false, 17), "color", [], "any", false, false, false, 17), "html", null, true);
+            echo "\">";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["product"], "category", [], "any", false, false, false, 17), "name", [], "any", false, false, false, 17), "html", null, true);
+            echo "</span>
                             <h5 class=\"card-title\">";
-                // line 18
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "name", [], "any", false, false, false, 18), "html", null, true);
-                echo "</h5>
+            // line 18
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "name", [], "any", false, false, false, 18), "html", null, true);
+            echo "</h5>
                             <p class=\"card-text\">";
-                // line 19
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $this->extensions['Twig\Extra\String\StringExtension']->createUnicodeString(twig_get_attribute($this->env, $this->source, $context["product"], "shortDescription", [], "any", false, false, false, 19)), "truncate", [0 => 100, 1 => "...", 2 => false], "method", false, false, false, 19), "html", null, true);
-                echo "</p>
+            // line 19
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $this->extensions['Twig\Extra\String\StringExtension']->createUnicodeString(twig_get_attribute($this->env, $this->source, $context["product"], "shortDescription", [], "any", false, false, false, 19)), "truncate", [0 => 100, 1 => "...", 2 => false], "method", false, false, false, 19), "html", null, true);
+            echo "</p>
                             <a type=\"button\" class=\"btn btn-primary position-relative\" href=\"";
-                // line 20
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("longDescription", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id", [], "any", false, false, false, 20)]), "html", null, true);
-                echo "\">Plus de détails</a>
+            // line 20
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("longDescription", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id", [], "any", false, false, false, 20)]), "html", null, true);
+            echo "\">Plus de détails</a>
                             <p>";
-                // line 21
-                echo twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, $context["product"], "price", [], "any", false, false, false, 21) . "€"), "html", null, true);
-                echo "</p>
+            // line 21
+            echo twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, $context["product"], "price", [], "any", false, false, false, 21) . "€"), "html", null, true);
+            echo "</p>
                             <p>";
-                // line 22
-                echo twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, $context["product"], "quantity", [], "any", false, false, false, 22) . " en stock"), "html", null, true);
-                echo "</p>
+            // line 22
+            echo twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, $context["product"], "quantity", [], "any", false, false, false, 22) . " en stock"), "html", null, true);
+            echo "</p>
                             <div class=\"card-footer text-muted\">Ajouté le ";
-                // line 23
-                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "createdAt", [], "any", false, false, false, 23), "d/m/Y"), "html", null, true);
-                echo "</div>
+            // line 23
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "createdAt", [], "any", false, false, false, 23), "d/m/Y"), "html", null, true);
+            echo "</div>
                         </div>
                     </div>
                     </div>
                 ";
-            }
             // line 28
             echo "            ";
         }
@@ -153,7 +151,7 @@ class __TwigTemplate_5158b3aca36c3c8e8072b684f75ebc0ee4662774e8fd10b6c06d127bc70
 
     public function getDebugInfo()
     {
-        return array (  136 => 29,  130 => 28,  122 => 23,  118 => 22,  114 => 21,  110 => 20,  106 => 19,  102 => 18,  96 => 17,  91 => 15,  87 => 13,  84 => 12,  80 => 11,  76 => 9,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
+        return array (  134 => 29,  128 => 28,  121 => 23,  117 => 22,  113 => 21,  109 => 20,  105 => 19,  101 => 18,  95 => 17,  90 => 15,  86 => 13,  84 => 12,  80 => 11,  76 => 9,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -169,7 +167,7 @@ class __TwigTemplate_5158b3aca36c3c8e8072b684f75ebc0ee4662774e8fd10b6c06d127bc70
     <div class=\"row row-cols-1 row-cols-md-3 g-4\">
 \t\t
             {% for product in products %}
-                {% if product.visible == true %}
+                {#{% if product.visible == true %}#}
                     <div class=\"col\">
                     <div class=\"card\">
                         <img src=\"{{ product.mainPicture }}\" class=\"card-img-top\" alt=\"...\">
@@ -184,7 +182,7 @@ class __TwigTemplate_5158b3aca36c3c8e8072b684f75ebc0ee4662774e8fd10b6c06d127bc70
                         </div>
                     </div>
                     </div>
-                {% endif %}
+                {#{% endif %}#}
             {% endfor %}
         
     </div>

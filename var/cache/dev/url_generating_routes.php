@@ -4,6 +4,6 @@
 
 return [
     'product_index' => [[], ['_controller' => 'App\\Controller\\ProductController::index'], [], [['text', '/product/']], [], []],
-    'longDescription' => [['id'], ['_controller' => 'App\\Controller\\ProductController::one'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/product']], [], []],
+    'longDescription' => [['id'], ['_controller' => 'App\\Controller\\ProductController::one'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/product/show']], [], []],
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], []],
 ];

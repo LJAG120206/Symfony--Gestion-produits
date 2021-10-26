@@ -12,13 +12,13 @@ return [
     ],
     [ // $regexpList
         0 => '{^(?'
-                .'|/product/([^/]++)(*:24)'
-                .'|/_error/(\\d+)(?:\\.([^/]++))?(*:59)'
+                .'|/product/show/([^/]++)(*:29)'
+                .'|/_error/(\\d+)(?:\\.([^/]++))?(*:64)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
-        24 => [[['_route' => 'longDescription', '_controller' => 'App\\Controller\\ProductController::one'], ['id'], null, null, false, true, null]],
-        59 => [
+        29 => [[['_route' => 'longDescription', '_controller' => 'App\\Controller\\ProductController::one'], ['id'], null, null, false, true, null]],
+        64 => [
             [['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

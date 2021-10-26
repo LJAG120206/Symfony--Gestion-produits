@@ -24,12 +24,18 @@ class ProductController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="longDescription")
+     * @Route("/show/{id}", name="longDescription")
      */
     public function one($id, ProductRepository $productRepository)
     {
+        $product =$productRepository->find($id);
+
+        if (!$product) {
+            throw $this->createNotFoundException("Le produit n'existe pas !");
+        }
+
         return $this->render('product/show.html.twig', [
-            'product'=> $productRepository->find($id)
+            'product'=> $product
         ]);
     }
 }

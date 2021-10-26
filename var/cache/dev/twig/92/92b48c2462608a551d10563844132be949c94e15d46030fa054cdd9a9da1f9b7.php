@@ -45,26 +45,28 @@ class __TwigTemplate_605dfbb13448d4bd6dd80d595a9cec8ec5c4d9b8e0a06367474edcb4174
 <html>
     <head>
         <meta charset=\"UTF-8\">
+        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=7\">
+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <title>";
-        // line 5
+        // line 7
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
         ";
-        // line 8
+        // line 10
         echo "        ";
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 12
+        // line 14
         echo "
         ";
-        // line 13
+        // line 15
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 16
+        // line 18
         echo "    </head>
     <body>
         ";
-        // line 18
+        // line 20
         $this->displayBlock('body', $context, $blocks);
-        // line 19
+        // line 21
         echo "    </body>
 </html>
 ";
@@ -73,7 +75,7 @@ class __TwigTemplate_605dfbb13448d4bd6dd80d595a9cec8ec5c4d9b8e0a06367474edcb4174
 
     }
 
-    // line 5
+    // line 7
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -86,16 +88,16 @@ class __TwigTemplate_605dfbb13448d4bd6dd80d595a9cec8ec5c4d9b8e0a06367474edcb4174
 
     }
 
-    // line 8
+    // line 10
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 9
+        // line 11
         echo "            ";
-        // line 10
+        // line 12
         echo "             <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css \">
         ";
         
@@ -103,23 +105,23 @@ class __TwigTemplate_605dfbb13448d4bd6dd80d595a9cec8ec5c4d9b8e0a06367474edcb4174
 
     }
 
-    // line 13
+    // line 15
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 14
+        // line 16
         echo "            ";
-        // line 15
+        // line 17
         echo "        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
     }
 
-    // line 18
+    // line 20
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -138,7 +140,7 @@ class __TwigTemplate_605dfbb13448d4bd6dd80d595a9cec8ec5c4d9b8e0a06367474edcb4174
 
     public function getDebugInfo()
     {
-        return array (  123 => 18,  116 => 15,  114 => 14,  107 => 13,  99 => 10,  97 => 9,  90 => 8,  77 => 5,  68 => 19,  66 => 18,  62 => 16,  60 => 13,  57 => 12,  54 => 8,  50 => 5,  44 => 1,);
+        return array (  125 => 20,  118 => 17,  116 => 16,  109 => 15,  101 => 12,  99 => 11,  92 => 10,  79 => 7,  70 => 21,  68 => 20,  64 => 18,  62 => 15,  59 => 14,  56 => 10,  52 => 7,  44 => 1,);
     }
 
     public function getSourceContext()
@@ -147,6 +149,8 @@ class __TwigTemplate_605dfbb13448d4bd6dd80d595a9cec8ec5c4d9b8e0a06367474edcb4174
 <html>
     <head>
         <meta charset=\"UTF-8\">
+        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=7\">
+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
